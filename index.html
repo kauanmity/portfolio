@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Kauan de Carvalho, desenvolvedor full stack. Projetos web, aplicativos Windows, extensões e jogos.">
+  <meta name="theme-color" content="#f6f6ef">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kauan de Carvalho · Portfólio">
+  <meta property="og:description" content="Projetos, linguagens e módulos de Kauan de Carvalho.">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="portfolio.js"></script>
+  <title>Kauan de Carvalho · Portfólio</title>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Kauan de Carvalho, início">
+        <span class="monogram" aria-hidden="true">KC</span>
+        <span class="brand-name">Kauan de Carvalho</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#competencias">Competências</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="header-github" href="https://github.com/kauanmity">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="shell hero" id="inicio" aria-labelledby="nome">
+      <div>
+        <p class="eyebrow hero-label"><span class="signal" aria-hidden="true"></span> Desenvolvedor full stack</p>
+        <h1 id="nome">Kauan de<br>Carvalho<span>.</span></h1>
+      </div>
+      <div class="hero-intro">
+        <p>Desenvolvo plataformas web, aplicativos Windows e jogos, da interface ao banco de dados.</p>
+        <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="shell projects" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="section-head">
+        <h2 id="projetos-titulo">Projetos</h2>
+        <div class="filters" role="group" aria-label="Filtrar projetos" hidden>
+          <button type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" data-filter="desktop" aria-pressed="false">Desktop</button>
+          <button type="button" data-filter="jogos" aria-pressed="false">Jogos</button>
+          <button type="button" data-filter="ferramentas" aria-pressed="false">Ferramentas</button>
+        </div>
+      </div>
+      <p class="sr-only" id="resultado-filtro" role="status"></p>
+      <div class="project-grid">
+        <article class="project feature" data-category="web desktop jogos">
+          <div class="feature-content">
+            <p class="eyebrow feature-label">Em destaque <span aria-hidden="true">/</span> Web + Desktop</p>
+            <h3>ArenaCup<br><span>&amp; ArenaOS</span></h3>
+            <p>Ecossistema competitivo de HaxBall com rankings, torneios, replays e integração com Discord. O cliente ArenaOS reúne salas, biblioteca de partidas e métricas de desempenho.</p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Electron</li>
+            </ul>
+            <div class="project-links">
+              <a class="button button-accent" href="https://www.arenacup.com.br/">Ver ArenaCup <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/kauanmity/ArenaOS">ArenaOS no GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="feature-visual">
+            <div class="feature-frame">
+              <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>ArenaOS</span></div>
+              <img src="assets/arenaos.webp" width="1600" height="860" alt="Interface do cliente ArenaOS com modos de jogo e salas de HaxBall" fetchpriority="high">
+            </div>
+          </div>
+        </article>
+
+        <article class="project card" data-category="web">
+          <div class="card-visual itreon">
+            <img src="assets/itreon.webp" width="1000" height="620" alt="Tela de rankings e navegação da plataforma Itreon Sports" loading="lazy">
+          </div>
+          <div class="card-content">
+            <p class="eyebrow">Plataforma web</p>
+            <h3>Itreon Sports</h3>
+            <p>Plataforma para jogadores, times e arenas, com reservas de quadra, organização de partidas, campeonatos e rankings.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li></ul>
+          </div>
+        </article>
+
+        <article class="project card" data-category="web">
+          <div class="card-visual hub">
+            <img src="assets/mity-hub.webp" width="1000" height="620" alt="Modo demonstrativo do Mity Market com filtros e seleção de itens para troca" loading="lazy">
+          </div>
+          <div class="card-content">
+            <p class="eyebrow">Plataforma web</p>
+            <h3>Mity Hub</h3>
+            <p>Central dos produtos Market, Skins e BOOST. Reúne catálogo, inventário, login Steam e um painel administrativo em desenvolvimento.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>React</li><li>NestJS</li><li>Fastify</li><li>PostgreSQL</li></ul>
+          </div>
+        </article>
+
+        <article class="project card" data-category="desktop ferramentas">
+          <div class="card-visual boost">
+            <img src="assets/mity-boost.webp" width="1000" height="620" alt="Tela de otimização e gerenciamento de ajustes no Mity BOOST" loading="lazy">
+          </div>
+          <div class="card-content">
+            <p class="eyebrow">Aplicativo Windows</p>
+            <h3>Mity BOOST</h3>
+            <p>Aplicativo com monitoramento de recursos, ajustes reversíveis do Windows e perfis de configuração para CS2, com histórico local.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>C#</li><li>.NET</li><li>WPF</li><li>SQLite</li></ul>
+          </div>
+        </article>
+
+        <article class="project card rusblox" data-category="jogos">
+          <div class="rusblox-visual" aria-hidden="true">
+            <span class="compass">N</span>
+            <span class="crosshair"></span>
+            <span class="rusblox-wordmark">RUSBLOX</span>
+          </div>
+          <div class="card-content">
+            <p class="eyebrow">Jogo · Alfa</p>
+            <h3>Rusblox</h3>
+            <p>Jogo de sobrevivência em primeira pessoa no Roblox, com exploração de ilha, coleta de recursos, fabricação de itens e construção de bases.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Luau</li><li>Roblox Studio</li><li>Rojo</li></ul>
+          </div>
+        </article>
+
+        <article class="project card compact" data-category="ferramentas">
+          <div class="card-content">
+            <p class="eyebrow">Extensão de navegador</p>
+            <h3>mitySKINS</h3>
+            <p>Extensão para Chrome e Edge que lê as probabilidades das caixas, calcula o valor esperado e simula aberturas localmente.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>JavaScript</li><li>Web Extensions</li></ul>
+          </div>
+        </article>
+
+        <article class="project card compact" data-category="web jogos">
+          <div class="card-content">
+            <p class="eyebrow">Projeto acadêmico</p>
+            <h3>TupiQuest</h3>
+            <p>Quiz interativo criado em uma atividade do SENAI, com pontuação e feedback sonoro para as respostas.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="text-link" href="https://github.com/kauanmity/TupiQuest">Ver repositório <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project card compact" data-category="jogos ferramentas">
+          <div class="card-content">
+            <p class="eyebrow">Bots e scripts</p>
+            <h3>HaxBall e Discord</h3>
+            <p>Scripts para salas de HaxBall e uma base em JavaScript para bots do Discord.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>JavaScript</li><li>Node.js</li><li>discord.js</li></ul>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/kauanmity/HaxNeon">HaxNeon <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/kauanmity/Discord">Base Discord <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="competencies" id="competencias" aria-labelledby="competencias-titulo">
+      <div class="shell">
+        <h2 id="competencias-titulo">Competências</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Linguagens</h3>
+            <ul class="tags" aria-label="Linguagens de programação e web">
+              <li>JavaScript</li><li>TypeScript</li><li>C#</li><li>Luau</li><li>SQL</li><li>Python</li><li>PHP</li><li>HTML</li><li>CSS</li><li>PowerShell</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Bibliotecas e ferramentas</h3>
+            <ul class="tags" aria-label="Bibliotecas, frameworks e ferramentas">
+              <li>React</li><li>Next.js</li><li>Vite</li><li>Tailwind CSS</li><li>Node.js</li><li>Express</li><li>NestJS</li><li>Fastify</li><li>Prisma</li><li>.NET</li><li>WPF</li><li>Electron</li><li>Roblox Studio</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Dados</h3>
+            <ul class="tags" aria-label="Bancos de dados e cache">
+              <li>PostgreSQL</li><li>SQLite</li><li>MongoDB</li><li>Redis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modules">
+          <h3>Módulos na prática</h3>
+          <dl>
+            <div><dt>Autenticação e integrações</dt><dd>Sessões, permissões, login Steam e bots do Discord.</dd></div>
+            <div><dt>Operações e dados</dt><dd>APIs, catálogo, inventário, reservas de quadra e administração.</dd></div>
+            <div><dt>Jogos e competições</dt><dd>Rankings, torneios, replays, coleta de recursos e fabricação de itens.</dd></div>
+            <div><dt>Aplicativos Windows</dt><dd>Monitoramento, perfis de configuração, histórico e restauração de ajustes.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="contact">
+    <div class="shell">
+      <div class="contact-main">
+        <h2>Vamos conversar<span>?</span></h2>
+        <div class="contact-links">
+          <a class="button button-accent" href="https://www.linkedin.com/in/kauan-de-carvalho/">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://github.com/kauanmity">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="contact-foot">
+        <p>Kauan de Carvalho</p>
+        <a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
